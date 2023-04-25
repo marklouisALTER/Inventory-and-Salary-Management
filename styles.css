@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+* {
+ 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+body{  
+  background-color: #ced4da;
+ 
+  font-family: 'Abyssinica SIL', serif;
+}
+/**Start of Header **/
+.header{
+  min-height: 50px;
+  background-color:#0d1f57;
+  width:100%;
+  height:100%;
+  border-bottom: 4px solid orange;
+  }
+  
+  .container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 30px;
+  }
+  
+  .container img{
+  width: 200px;
+  height: 100px;
+  margin-top: 20px;
+  border:1px solid orange;
+  border-radius: 20px;
+  
+}
+
+.contain{
+  display: flex;
+  justify-content: space-between;
+margin-top: 20px;
+} 
+
+
+.contain ul{
+  gap:20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header, ul {
+    display: flex;
+}
+a{
+  text-decoration: none;
+  color:white;
+  padding: 10px;
+}
+ul{
+    list-style-type: none;
+    font-size: 18px;
+    color: white;
+}
+ul li{
+  padding:50px 0;
+}
+h1{
+  font-family: 'Abyssinica SIL', serif;
+ letter-spacing: 2px;
+ font-size: 50px;
+ line-height:100px;
+ text-align: center;
+ margin-right: 100px;
+}
+
+a:hover{
+  color:#0d6efd;
+}
+
+/**End of Header **/
+
+
+/**Start of Body text flexbox **/
+.section-box{
+  display:flex;
+  flex-flow:column;
+  padding: 120px 40px;
+}
+
+.boxing{
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+  background-color:white;
+  height: 400px;
+  padding-left: 70px;
+ 
+text-align: center;
+background-color: white;
+background:transparent;
+}
+
+
+.aligning{
+  display:flex;
+  justify-content: space-around;
+  gap:20px;
+}
+
+.aligning img{
+  width: 1000px;
+  padding-bottom: 100px;
+  height: 500px;
+}
+
+/**border:2px solid black;
+margin: 10px;
+box-shadow: 	0px 5px 7px 2px rgba(0,0,0,0.4),
+0px 3px 13px -1px rgba(0,0,0,0.29),
+0px -4px 1px 0px rgba(0,0,0,0.22) inset,
+0px 2px 10px 2px rgba(0,0,0,0.28);
+border:	10px solid rgba(0,0,0,0.01);
+border-top-left-radius:	20px;
+border-top-right-radius: 20px;
+**/
+.buttons{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-left: 60px;
+}
+.button-container{
+  margin-right: 120px;
+}
+
+button {  
+  font-size: 30px;
+  padding: 15px 70px;
+  border-radius: 30px;
+}
+
+/**End of Body text flexbox **/
+
+
+                
+/** Start of Pop up modal
+ **/
+button, #trigger-modal{
+  font-size: 30px;
+  padding: 15px 70px;
+  background-color:#0d1f57;
+  border-radius: 50px;
+  color: #ced4da;
+  cursor: pointer;
+  
+}
+
+.popup-modal {
+  padding: 32px 64px;
+  border-bottom: 2px solid black;
+  position:100% auto;  
+  background-color: #ced4da;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0%;
+  text-align: center;
+}
+.backdrop {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: 0%;
+}
+
+.popup-modal.show {
+  opacity: 100%;
+  pointer-events: all;
+}
+
+.backdrop.show {
+  opacity: 30%;
+}
+.popup-modal{
+  transition: transform .3s ease-in-out, opacity .4s ease;
+  transform: translate(-50%, -100%);
+}
+
+.popup-modal.show {
+  transform: translate(-50%, -50%);
+}
+/** End of Pop up modal **/
+.form-box{
+  width:350px;
+  height: 500px;
+  position:100% auto;  
+  background-color: #ced4da;
+  padding:5px;
+
+}
+.toggle-btn{
+  padding:10px 30px;
+  cursor: pointer;
+  border:0;
+  outline:none;
+  position:relative;
+  border-radius: 15px;
+}
+
+.input-group{
+  top:180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+
+}
+
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin:5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom:3px solid#0d1f57;
+  outline: none;
+  background:transparent;
+}
+.submit-btn{
+  width:65%;
+  padding:10px 10px;
+  cursor:pointer;
+  border-radius: 10px;
+  text-align: center;
+  color:#ced4da;
+  background-color:#0d1f57;
+}
+
+
+#login{
+  left: 100px;
+}
+
+
+#register{
+  left: 520px;
+}
